@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>概要 | JR首都圏</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="index.html">
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">JR</span>
+      <span><strong>JR首都圏</strong><small>架空鉄道会社サイト</small></span>
+    </a>
+    <nav class="site-nav" aria-label="主要ナビゲーション"><a href="index.html" aria-current="page">概要</a><a href="tokyo.html">東京鉄道路線図</a><a href="loop.html">東京環状鉄道路線図</a><a href="stations.html">駅一覧</a><a href="links.html">サイトリンク</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Fictional Railway Company</p>
+      <h1>東京圏を結ぶ架空鉄道路線ポータル</h1>
+      <p>リポジトリ内の「東京鉄道路線図」「東京環状鉄道路線図」をもとに、各路線の図式化、種別ごとの停車駅、駅検索をまとめました。</p>
+      <div class="hero-actions">
+        <a class="button" href="tokyo.html">東京鉄道路線図を見る</a>
+        <a class="button secondary" href="stations.html">駅を検索する</a>
+      </div>
+    </section>
+    <section class="notice">
+      <strong>ご案内</strong>
+      <p>このサイトは架空の鉄道会社の情報サイトです。実在の鉄道会社・路線とは関係ありません。</p>
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Overview</p>
+        <h2>収録データ</h2>
+      </div>
+      <div id="overviewStats" class="stats-grid"></div>
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Routes</p>
+        <h2>路線グループ</h2>
+      </div>
+      <div id="groupCards" class="card-grid"></div>
+    </section>
+</main>
+  <footer class="site-footer">
+    <p>このサイトは架空の鉄道会社「JR首都圏」を紹介するWebサイトです。</p>
+    <p>作成者: zuyasi</p>
+  </footer>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
