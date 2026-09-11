@@ -18,12 +18,31 @@
     <section class="page-hero compact">
       <p class="eyebrow">Station Index</p>
       <h1>駅一覧・停車種別検索</h1>
-      <p>駅名を入力すると、その駅が含まれる路線と停車する種別を確認できます。</p>
+      <p>駅名やナンバリング、路線名、停車種別で探せます。各駅では乗り入れ路線・駅名・駅ナンバリング・停車種別をまとめて表示します。</p>
     </section>
     <section class="section">
-      <label class="search-label" for="stationSearch">駅名検索</label>
-      <input id="stationSearch" class="search-input" type="search" placeholder="例: 東京、新宿、宇都宮">
+      <div class="search-toolbar">
+        <div>
+          <label class="search-label" for="stationSearch">キーワード検索</label>
+          <input id="stationSearch" class="search-input" type="search" placeholder="例: 東京、JY01、中央、快速" autocomplete="off">
+        </div>
+        <div class="search-filters">
+          <div>
+            <label class="search-label" for="groupFilter">路線グループ</label>
+            <select id="groupFilter" class="filter-select">
+              <option value="">すべて</option>
+            </select>
+          </div>
+          <div>
+            <label class="search-label" for="serviceFilter">停車種別</label>
+            <select id="serviceFilter" class="filter-select">
+              <option value="">すべて</option>
+            </select>
+          </div>
+        </div>
+      </div>
       <div id="stationCount" class="result-count"></div>
+      <div id="stationEmpty" class="station-empty" hidden>条件に一致する駅がありません。キーワードや絞り込みを変えてみてください。</div>
       <div id="stationResults" class="station-results"></div>
     </section>
 </main>
